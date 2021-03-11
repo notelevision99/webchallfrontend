@@ -1,0 +1,138 @@
+$mw-footer: 90%;
+
+.footer {
+  background-color: #222;
+  color: $lightGray;
+
+  text-align: center;
+
+  .MuiSvgIcon-root {
+    font-size: 1.8rem;
+  }
+
+  &__container {
+    width: $mw-footer;
+    margin: auto;
+    padding: 3rem 0;
+
+    .ft-brand {
+      border-bottom: 1px solid #000;
+      padding: 1rem 0;
+
+      .logo-ft {
+        max-width: 21.2rem;
+        margin: auto;
+      }
+
+      &__bottom {
+        display: flex;
+        justify-content: center;
+
+        margin: 1.5rem 0;
+
+        p {
+          margin: 0 1.5rem;
+
+          text-transform: uppercase;
+          letter-spacing: 0.3rem;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .ft-content {
+      padding: 1rem 0;
+      // &--cate {
+      //   @extend .brand__bottom;
+      //   p {
+      //     font-size: 1.4rem;
+      //     font-weight: lighter;
+      //   }
+      // }
+
+      &--top {
+        display: flex;
+        justify-content: space-between;
+
+        margin: 2rem 0;
+
+        .ft-c-item {
+          width: calc(100% / 3);
+
+          &__name {
+            h4 {
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+
+            margin-bottom: 1.5rem;
+          }
+
+          &__info {
+            &.m-l {
+              margin-left: 3.5rem;
+            }
+
+            .ft-media {
+              @include midflex;
+
+              p {
+                padding: 1rem;
+                margin: 1rem 1.5rem;
+
+                border-radius: 50%;
+
+                box-shadow: 0.5rem 0.5rem 1rem #171717,
+                  -0.5rem -0.5rem 1rem #2d2d2d;
+              }
+            }
+
+            .ft-address {
+              display: flex;
+              align-items: center;
+
+              width: 100%;
+              margin: auto;
+
+              padding: 0.5rem 0;
+
+              font-size: 1.4rem;
+
+              &--icon {
+                margin-right: 0.5rem;
+
+                .MuiSvgIcon-root {
+                  color: $lightGreen;
+                }
+              }
+
+              &--title {
+                font-weight: bold;
+              }
+
+              &--info {
+                transition: all 0.2s;
+
+                &:hover {
+                  color: $lightGreen;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &--policy {
+        display: flex;
+        flex-direction: column;
+
+        font-size: 1.4rem;
+
+        small {
+          padding: 0.5rem;
+          color: #4a4a4a;
+        }
+      }
+    }
+  }
+}

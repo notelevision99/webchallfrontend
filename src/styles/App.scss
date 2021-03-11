@@ -1,0 +1,23 @@
+@import "./global/fonts";
+@import "./global/reset";
+@import "./global/variable";
+@import "./global/mixin";
+
+// css global class
+@import "./global/global";
+
+// commom component
+@import "./atom/header.scss";
+@import "./atom/footer.scss";
+
+// Home page
+@import "./components/homePage/Slide.scss";
+@import "./components/homePage/Overview.scss";
+@import "./components/homePage/HomeNews.scss";
+@import "./components/homePage/BusinessProduct.scss";
+@import "./components/homePage/Technology.scss";
+@import "./components/homePage/BusinessAreas.scss";
+
+// Product Page
+@import "./components/productPage/ListProduct.scss";
+@import "./components/productDetailPage/ProductDetail.scss";

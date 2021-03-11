@@ -1,0 +1,15 @@
+.introduce {
+  width: 60%;
+  margin: 33rem auto 4rem;
+
+  text-align: center;
+
+  &--title {
+    font-size: 3.6rem;
+    padding-bottom: 2rem;
+  }
+
+  &--text {
+    font-size: 1.6rem;
+  }
+}

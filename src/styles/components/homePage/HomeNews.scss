@@ -1,0 +1,69 @@
+.homenews {
+  width: 70%;
+
+  margin: 15rem auto;
+
+  display: flex;
+
+  &__lasted {
+    width: 50%;
+
+    &--title {
+      font-size: 3.4rem;
+      color: $primary;
+
+      margin-bottom: 4rem;
+    }
+
+    &--title-s {
+      width: fit-content;
+      color: $gray;
+
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+
+      padding-bottom: 1rem;
+      border-bottom: 0.1rem solid $lightGray;
+    }
+
+    .hn-item {
+      padding: 2rem 0;
+      border-bottom: 0.1rem solid $lightGray;
+
+      &--title {
+        font-size: 1.8rem;
+        padding: 1rem 0;
+      }
+
+      &--date {
+        font-size: 1.2rem;
+
+        color: $gray;
+      }
+    }
+
+    &--viewmore {
+      margin-top: 2rem;
+
+      color: $lightGreen;
+
+      font-size: 1.6rem;
+      font-weight: bold;
+
+      .MuiSvgIcon-root {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__img {
+    width: 50%;
+
+    img {
+      width: fit-content;
+      height: fit-content;
+      margin-left: auto;
+    }
+  }
+}

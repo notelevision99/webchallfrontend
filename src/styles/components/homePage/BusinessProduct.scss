@@ -1,0 +1,46 @@
+.business-product {
+  width: 67%;
+  margin: 15rem auto;
+
+  &__title {
+    width: 70%;
+
+    color: $primary;
+
+    font-size: 3.4rem;
+    text-align: center;
+    line-height: 0.1em;
+
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
+    margin: 1rem auto 2rem;
+
+    span {
+      background: #fff;
+      padding: 0 1rem;
+    }
+  }
+
+  .carousel-product {
+    margin-top: 4rem;
+
+    .slick-slider {
+      .slick-prev:before,
+      .slick-next:before {
+        color: $primary;
+      }
+    }
+
+    img {
+      margin: auto;
+    }
+
+    h5 {
+      text-align: center;
+
+      font-size: 1.2rem;
+      text-transform: uppercase;
+
+      margin-top: 1rem;
+    }
+  }
+}

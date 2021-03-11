@@ -1,0 +1,178 @@
+#projects {
+  width: 80%;
+  margin: 10rem auto;
+
+  .business-product__title {
+    width: 70%;
+
+    color: $primary;
+
+    font-size: 3.4rem;
+    text-align: center;
+    line-height: 0.1em;
+
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
+    margin: 1rem auto 2rem;
+
+    span {
+      background: #fff;
+      padding: 0 1rem;
+    }
+  }
+
+  .project-grid {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(3, 196px);
+    grid-gap: 20px;
+
+    justify-self: center;
+    align-self: center;
+
+    margin-top: 6rem;
+
+    .project {
+      position: relative;
+
+      background: #414141;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 3px 12px 0px rgba($color: #000000, $alpha: 0.5);
+
+      &.coll-2 {
+        grid-column: span 2;
+      }
+
+      &.row-2 {
+        grid-row: span 2;
+      }
+
+      .image {
+        width: 100%;
+        height: 100%;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: filter 0.2s linear;
+
+        background-image: url(../../../assets/images/business-areas/logo-bg.jpg);
+      }
+
+      h3 {
+        width: 100%;
+        position: absolute;
+
+        color: #555555;
+        font-size: 38px;
+        line-height: 196px;
+        text-align: center;
+        font-weight: 700;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+
+      .isProject {
+        opacity: 0;
+        color: $light;
+        transition: opacity 0.2s linear;
+        text-shadow: 3px 3px rgba($color: #000000, $alpha: 0.35);
+      }
+
+      &:hover {
+        h3 {
+          opacity: 1;
+          display: block;
+        }
+
+        .image {
+          filter: saturate(0) blur(5px);
+        }
+      }
+    }
+
+    @media screen and (max-width: 1919px) {
+      grid-template-columns: repeat(4, 300px);
+      grid-template-rows: repeat(3, 168px);
+    }
+
+    @media screen and (max-width: 1600px) {
+      //grid-template-columns: repeat(4, 230px);
+      grid-template-rows: repeat(3, 129px);
+
+      .project {
+        h3 {
+          font-size: 32px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1366px) {
+      grid-template-columns: repeat(4, 200px);
+      grid-template-rows: repeat(3, 112px);
+
+      .project {
+        h3 {
+          font-size: 24px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 960px) {
+      grid-template-columns: repeat(3, 180px);
+      grid-template-rows: repeat(5, 101px);
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 150px);
+      width: 100%;
+
+      grid-column: span 1;
+      padding: 20px;
+      box-sizing: border-box;
+
+      .project {
+        h3 {
+          font-size: 32px;
+        }
+
+        &.col-2 {
+          grid-column: span 1;
+        }
+
+        &.row-2 {
+          grid-row: span 1;
+        }
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(7, 150px);
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 125px auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+
+    .heading {
+      grid-column: span 1;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    height: auto;
+  }
+}

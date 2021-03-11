@@ -1,0 +1,138 @@
+.overview {
+  &__wrap {
+    width: 80%;
+    margin: auto;
+
+    position: relative;
+
+    .vision {
+      @include flexbox(center, center, nowrap);
+
+      position: absolute;
+
+      top: -7.5rem;
+
+      z-index: 10;
+
+      &__box {
+        width: calc(80% / 3);
+        height: 33rem;
+
+        background: $primary;
+        color: $white;
+
+        border-radius: 5px;
+        box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+
+        transition: all 0.3s;
+
+        &:nth-child(2) {
+          margin: 0 0.5rem;
+        }
+
+        &:hover {
+          transform: scale(0.95);
+
+          .v-icon {
+            transform: scale(0.8);
+          }
+        }
+
+        &--content {
+          text-align: center;
+
+          padding: 2rem;
+
+          .v-icon {
+            width: 10rem;
+
+            margin: auto;
+            transition: all 0.3s;
+
+            img {
+              color: red;
+            }
+          }
+
+          .v-title {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+
+            padding: 1.5rem 0;
+
+            &::after {
+              display: block;
+              content: "";
+              width: 30%;
+              margin: 1rem auto 0;
+              height: 0.1rem;
+              background: $white;
+            }
+          }
+
+          .v-des {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+
+    // .business-products {
+    //   padding-top: 37rem;
+
+    //   width: 100%;
+    //   margin: auto;
+
+    //   &__box {
+    //     .bp--title {
+    //       text-align: center;
+    //       text-transform: uppercase;
+
+    //       font-size: 2.4rem;
+
+    //       color: $primary;
+    //     }
+
+    //     .bp--carousel {
+    //       &__box {
+    //         width: 100%;
+    //         height: 100%;
+
+    //         @include midflex;
+    //         flex-direction: column;
+    //       }
+
+    //       .swiper-container {
+    //         height: 20rem;
+
+    //         .swiper-pagination {
+    //           display: none;
+    //         }
+
+    //         .swiper-button-prev {
+    //           left: -1rem;
+    //           color: $primary;
+    //           border: none;
+    //         }
+
+    //         .swiper-button-next {
+    //           right: -1rem;
+    //           color: $primary;
+    //           border: none;
+    //         }
+
+    //         // .bp-c--img {
+    //         //   img {
+    //         //     margin: auto;
+    //         //   }
+    //         // }
+
+    //         .bp-c--name {
+    //           padding-top: 1.5rem;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}

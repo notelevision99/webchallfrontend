@@ -1,0 +1,177 @@
+header {
+  color: $primary;
+  font-family: roboto;
+
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+
+  z-index: 999;
+
+  .menu {
+    &--top {
+      width: 100%;
+      height: 5rem;
+
+      background: $white;
+
+      border-bottom: 1px solid $lightGray;
+
+      a {
+        @include midflex;
+
+        text-decoration: none;
+        color: #222;
+        .header-icon {
+          font-size: 2rem;
+
+          &.icon-mtl {
+            margin-left: 0.5rem;
+          }
+
+          &.icon-mtr {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      &__container {
+        width: 85%;
+        height: 100%;
+
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 1.6rem;
+        font-weight: bold;
+
+        color: $text-cl;
+      }
+
+      &--left {
+        @include midflex;
+
+        .m-tl-item {
+          padding-right: 2rem;
+        }
+
+        .language {
+          @include midflex;
+
+          &--img {
+            width: 2.5rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+
+      &--search {
+        width: 40rem;
+
+        &__container {
+          width: 80%;
+          position: relative;
+
+          input {
+            width: 100%;
+            height: 3rem;
+
+            padding: 0 2rem;
+
+            background-color: #ededed;
+
+            border-radius: 10rem;
+            border: none;
+
+            text-align: center;
+          }
+
+          .phd-search {
+            @include mid;
+
+            font-size: 2.2rem;
+          }
+        }
+      }
+
+      &--right {
+        @include midflex;
+
+        a {
+          padding-left: 2rem;
+        }
+      }
+    }
+
+    &--bottom {
+      padding: 1rem 0;
+
+      background: linear-gradient(
+        to bottom,
+        #fff 0%,
+        rgba(255, 255, 255, 0.8) 40%,
+        rgba(255, 255, 255, 0.4) 70%,
+        rgba(255, 255, 255, 0.03) 98%,
+        rgba(255, 255, 255, 0) 100%
+      );
+
+      ul {
+        width: 100%;
+
+        @include midflex;
+
+        li {
+          font-size: 1.6rem;
+          font-weight: bold;
+
+          padding: 0.4rem 0;
+          margin: 0 1.5rem;
+
+          cursor: pointer;
+          position: relative;
+          
+          a {
+            color: $primary;
+            
+            text-decoration: none;
+          }
+
+          &::before {
+            content: "";
+            width: 0%;
+            height: 0.2rem;
+            background: $primary;
+
+            position: absolute;
+            bottom: -0.4rem;
+            left: 5rem;
+
+            opacity: 0;
+
+            transform: translate(-50px);
+            transition: 0.3s;
+          }
+
+          &:nth-child(5) {
+            &::before {
+              opacity: 0 !important;
+            }
+          }
+
+          &:hover::before {
+            width: 70%;
+            opacity: 1;
+          }
+        }
+
+        .menu-logo {
+          width: 18rem;
+        }
+      }
+    }
+  }
+}

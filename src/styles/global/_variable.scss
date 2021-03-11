@@ -1,0 +1,32 @@
+// Main color
+$primary: #005b36;
+$lightGreen: #789a3d;
+$lightGray: #d3d3d3;
+
+$light: #f3f3f3;
+
+$gray: #808080;
+$white: #fff;
+$black: #000;
+
+/*global text color*/
+$text-cl: #222;
+$text-black-cl: #000;
+
+/*GRID - media queries breakpoints*/
+$xxs-min: 340px;
+$xs-min: 768px;
+$sm-min: 992px;
+$md-min: 1200px;
+$lg-min: 1600px;
+
+$xxs-max: ($xxs-min - 1);
+$xs-max: ($xs-min - 1);
+$sm-max: ($sm-min - 1);
+$md-max: ($md-min - 1);
+$lg-max: ($lg-min - 1);
+
+/*BOXED LAYOUT*/
+$max-width: 1920px;
+$container-max-width: $max-width;
+$container-width: 1040px;

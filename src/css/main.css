@@ -1,0 +1,130 @@
+.btn {
+    margin: 3px;
+}
+.img-listProd {
+    width: 100px;
+    height: 100px;
+}
+.img-productsCateId {
+    width: 50px;
+    height: 50px;
+}
+.img-listbanners {
+    width: 728px;
+    height: auto;
+}
+.img-listItemsOrder {
+    width: 40px;
+    height: 40px;
+}
+
+/* Sidebar */
+.main-sidebar .brand-link {
+    text-align: center;
+}
+.main-sidebar .sidebar .user-panel {
+    justify-content: center;
+}
+.main-sidebar .sidebar .user-panel .info {
+    text-align: center;
+}
+.main-sidebar .sidebar .user-panel .info a {
+    font-size: x-large;
+}
+.main-sidebar .sidebar .user-panel .info button {
+    border-radius: 7px;
+    margin-top: 15px;
+}
+.main-sidebar .sidebar .nav-sidebar > .nav-item > .nav-link.active {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Content */
+.content-wrapper .card {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.content-wrapper .card > .card-body > .row {
+    margin-bottom: 10px;
+}
+.card-title {
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-body ul {
+    margin: 0px;
+    padding: 0px;
+}
+.card-body ul li {
+    margin: 5px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.card-body .item-categories-blog {
+    padding: 0px;
+    border: none;
+    background: none;
+    color: rgba(29, 29, 29, 0.5);
+    border-bottom: 3px solid transparent;
+    width: fit-content;
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    outline: none;
+    transition: all 0.3s;
+}
+.card-body .item-categories-blog.active {
+    color: rgba(139, 51, 0, 0.7);
+    border-bottom: 3px solid rgba(139, 51, 0, 0.8);
+}
+
+/* Table */
+.table-bordered {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: none;
+    vertical-align: middle;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-bordered .table-image {
+    width: 150px;
+}
+.table-bordered .table-image img {
+    object-fit: contain;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.table-bordered .table-edit {
+    text-align: center;
+    width: 100px;
+}
+
+.table-bordered .table-edit a {
+    margin: 5px;
+}
+
+.row-pagination {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.page-item .page-link {
+    color: green;
+    border: #fff;
+}
+.page-item.active .page-link {
+    background-color: green;
+    color: white;
+}
